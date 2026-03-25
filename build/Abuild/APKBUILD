@@ -3,7 +3,7 @@
 # Maintainer: Elliott Mazzuca <emazzuca@qnx.com>
 pkgname=python3-pytest
 pkgver=8.4.2
-pkgrel=${pkgrel:-0}
+pkgrel=0
 pkgdesc="Python3 testing library"
 url="https://docs.pytest.org/en/latest/"
 arch="noarch"
@@ -50,7 +50,6 @@ package() {
     rm -f "$pkgdir"/usr/lib/python3*/site-packages/py.py
 }
 
-options="$options ${DISABLE_CHECK:+!check}"
 sha512sums="
 a6732666e7b59b2c28b47b1020a8381d31073cf9113086c562295429fddfa6b4ef2afda3cdcce0ec60bf60d038ad2bf8e921a2a409f3d56e31d94ca39e5ea81b  pytest-8.4.2.tar.gz
 "
